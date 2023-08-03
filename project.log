@@ -1,0 +1,164 @@
+2023-08-03 16:58:10,060 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.18.0.15:5000
+2023-08-03 16:58:10,060 werkzeug INFO [33mPress CTRL+C to quit[0m
+2023-08-03 16:58:35,282 root INFO home page has been rendered
+2023-08-03 16:58:35,283 application ERROR Exception on / [GET]
+Traceback (most recent call last):
+  File "/config/.local/lib/python3.8/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/config/.local/lib/python3.8/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/config/.local/lib/python3.8/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/config/.local/lib/python3.8/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/config/workspace/application.py", line 13, in home_page
+    return render_template('index.html')
+  File "/config/.local/lib/python3.8/site-packages/flask/templating.py", line 150, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/config/.local/lib/python3.8/site-packages/jinja2/environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/config/.local/lib/python3.8/site-packages/jinja2/environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "/config/.local/lib/python3.8/site-packages/jinja2/environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/config/.local/lib/python3.8/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/config/.local/lib/python3.8/site-packages/flask/templating.py", line 64, in get_source
+    return self._get_source_fast(environment, template)
+  File "/config/.local/lib/python3.8/site-packages/flask/templating.py", line 98, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+2023-08-03 16:58:35,285 werkzeug INFO 172.18.0.45 - - [03/Aug/2023 16:58:35] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2023-08-03 16:58:35,397 werkzeug INFO 172.18.0.45 - - [03/Aug/2023 16:58:35] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2023-08-03 16:59:05,646 root INFO home page has been rendered
+2023-08-03 16:59:05,646 application ERROR Exception on / [GET]
+Traceback (most recent call last):
+  File "/config/.local/lib/python3.8/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/config/.local/lib/python3.8/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/config/.local/lib/python3.8/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/config/.local/lib/python3.8/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/config/workspace/application.py", line 13, in home_page
+    return render_template('index.html')
+  File "/config/.local/lib/python3.8/site-packages/flask/templating.py", line 150, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/config/.local/lib/python3.8/site-packages/jinja2/environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/config/.local/lib/python3.8/site-packages/jinja2/environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "/config/.local/lib/python3.8/site-packages/jinja2/environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/config/.local/lib/python3.8/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/config/.local/lib/python3.8/site-packages/flask/templating.py", line 64, in get_source
+    return self._get_source_fast(environment, template)
+  File "/config/.local/lib/python3.8/site-packages/flask/templating.py", line 98, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+2023-08-03 16:59:05,647 werkzeug INFO 172.18.0.45 - - [03/Aug/2023 16:59:05] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2023-08-03 16:59:34,087 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.18.0.15:5000
+2023-08-03 16:59:34,087 werkzeug INFO [33mPress CTRL+C to quit[0m
+2023-08-03 16:59:41,778 root INFO home page has been rendered
+2023-08-03 16:59:41,778 application ERROR Exception on / [GET]
+Traceback (most recent call last):
+  File "/config/.local/lib/python3.8/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/config/.local/lib/python3.8/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/config/.local/lib/python3.8/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/config/.local/lib/python3.8/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/config/workspace/application.py", line 13, in home_page
+    return render_template('index.html')
+  File "/config/.local/lib/python3.8/site-packages/flask/templating.py", line 150, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/config/.local/lib/python3.8/site-packages/jinja2/environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/config/.local/lib/python3.8/site-packages/jinja2/environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "/config/.local/lib/python3.8/site-packages/jinja2/environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/config/.local/lib/python3.8/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/config/.local/lib/python3.8/site-packages/flask/templating.py", line 64, in get_source
+    return self._get_source_fast(environment, template)
+  File "/config/.local/lib/python3.8/site-packages/flask/templating.py", line 98, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+2023-08-03 16:59:41,780 werkzeug INFO 172.18.0.45 - - [03/Aug/2023 16:59:41] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2023-08-03 16:59:43,953 root INFO home page has been rendered
+2023-08-03 16:59:43,954 application ERROR Exception on / [GET]
+Traceback (most recent call last):
+  File "/config/.local/lib/python3.8/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/config/.local/lib/python3.8/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/config/.local/lib/python3.8/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/config/.local/lib/python3.8/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/config/workspace/application.py", line 13, in home_page
+    return render_template('index.html')
+  File "/config/.local/lib/python3.8/site-packages/flask/templating.py", line 150, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/config/.local/lib/python3.8/site-packages/jinja2/environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/config/.local/lib/python3.8/site-packages/jinja2/environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "/config/.local/lib/python3.8/site-packages/jinja2/environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/config/.local/lib/python3.8/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/config/.local/lib/python3.8/site-packages/flask/templating.py", line 64, in get_source
+    return self._get_source_fast(environment, template)
+  File "/config/.local/lib/python3.8/site-packages/flask/templating.py", line 98, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+2023-08-03 16:59:43,955 werkzeug INFO 172.18.0.45 - - [03/Aug/2023 16:59:43] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2023-08-03 17:04:08,510 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.18.0.15:5000
+2023-08-03 17:04:08,510 werkzeug INFO [33mPress CTRL+C to quit[0m
+2023-08-03 17:04:12,479 root INFO home page has been rendered
+2023-08-03 17:04:12,486 werkzeug INFO 172.18.0.45 - - [03/Aug/2023 17:04:12] "GET / HTTP/1.1" 200 -
+2023-08-03 17:04:12,566 werkzeug INFO 172.18.0.45 - - [03/Aug/2023 17:04:12] "GET /static/css/main.css HTTP/1.1" 200 -
+2023-08-03 17:04:12,575 werkzeug INFO 172.18.0.45 - - [03/Aug/2023 17:04:12] "GET /static/css/style.css HTTP/1.1" 200 -
+2023-08-03 17:04:20,666 root INFO search string has been obtained
+2023-08-03 17:04:22,034 root ERROR error handled for nonetype object
+2023-08-03 17:04:22,045 root INFO Name of the reviewers done
+2023-08-03 17:04:22,056 root INFO comments done
+2023-08-03 17:04:22,068 root ERROR NoneType error handled perfectly
+2023-08-03 17:04:22,068 root INFO seperate dictionaries have been created for all the headers
+2023-08-03 17:04:22,073 werkzeug INFO 172.18.0.45 - - [03/Aug/2023 17:04:22] "POST /review HTTP/1.1" 200 -
+2023-08-03 17:04:22,161 werkzeug INFO 172.18.0.45 - - [03/Aug/2023 17:04:22] "[33mGET /style.css HTTP/1.1[0m" 404 -
+2023-08-03 17:04:22,164 werkzeug INFO 172.18.0.45 - - [03/Aug/2023 17:04:22] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2023-08-03 17:08:30,679 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.18.0.15:5000
+2023-08-03 17:08:30,679 werkzeug INFO [33mPress CTRL+C to quit[0m
+2023-08-03 17:08:37,245 root INFO search string has been obtained
+2023-08-03 17:08:38,465 root ERROR error handled for nonetype object
+2023-08-03 17:08:38,476 root INFO Name of the reviewers done
+2023-08-03 17:08:38,488 root INFO comments done
+2023-08-03 17:08:38,500 root ERROR NoneType error handled perfectly
+2023-08-03 17:08:38,500 root INFO seperate dictionaries have been created for all the headers
+2023-08-03 17:08:38,507 werkzeug INFO 172.18.0.45 - - [03/Aug/2023 17:08:38] "POST /review HTTP/1.1" 200 -
+2023-08-03 17:08:38,595 werkzeug INFO 172.18.0.45 - - [03/Aug/2023 17:08:38] "[33mGET /style.css HTTP/1.1[0m" 404 -
+2023-08-03 17:08:38,598 werkzeug INFO 172.18.0.45 - - [03/Aug/2023 17:08:38] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2023-08-03 22:09:51,028 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.18.0.24:5000
+2023-08-03 22:09:51,028 werkzeug INFO [33mPress CTRL+C to quit[0m
