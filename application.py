@@ -64,15 +64,16 @@ def main_function():
                'Rating':ratings_text,
                'CommentHead':commenter_remarks_text,
                 'Comment':comments_text}
+    client=pymongo.MongoClient("mongodb+srv://yugpratapsingh:313ycd014916@cluster0.25gtiu5.mongodb.net/?retryWrites=true&w=majority")
+    db=client['webScrappingFlipkart']
+    collection=db['search data on reviews']
+    collection.insert_many(reviews)
     
     return render_template('result.html',reviews= reviews)
     logging.info(msg='result template has been rendered')
 
     # Here we enter all the data into our mongo db database
-    client=pymongo.MongoClient("mongodb+srv://yugpratapsingh:<313ycd014916>@cluster0.25gtiu5.mongodb.net/?retryWrites=true&w=majority")
-    db=client['webScrappingFlipkart']
-    collection=db['search data on reviews']
-    collection.insert_many(reviews)
+    
 if __name__=='__main__':
     app.run(host='0.0.0.0')
 
